@@ -1,0 +1,34 @@
+
+import java.util.*;
+
+public class Solution{
+    public static void main(String args[]){
+        Scanner in=new Scanner(System.in);
+        int arr[]=new int[3];
+        int arr1[]=new int[3];
+        for (int i=0;i<3;i++){
+            arr[i]=in.nextInt();
+        }
+        
+         for (int i=0;i<3;i++){
+            arr1[i]=in.nextInt();
+        }
+        
+        int alice=0;
+        int bob=0;
+        for (int i=0;i<3;i++){
+            if (arr[i]>arr1[i]){
+                alice ++;
+            }
+            else if(arr[i]==arr1[i]){
+               continue;
+            }
+            else{
+                bob++;
+            }
+        }
+        
+        System.out.println(alice+" "+bob);
+    }
+}
+
